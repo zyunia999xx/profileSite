@@ -75,6 +75,8 @@ body {
     text-rendering: optimizeLegibility
 }
 
+
+
 @media (prefers-color-scheme:dark) {
     body {
         background: #202b38;
@@ -1393,12 +1395,14 @@ body>footer {
 
 /*追加*/
 
-h2 {
+.nav_ {
     position: relative;
     padding-left: 25px;
     padding-right: 15px;
-  }
-  h2:before {
+
+}
+
+.nav_:before {
     content: "";
     display: block;
     position: absolute;
@@ -1407,5 +1411,31 @@ h2 {
     width: 3px;
     height: 20px;
     background-color: #22aa5b;
-  }
-  
+}
+
+main {
+    margin: 50px 0px
+}
+
+.mainbox {
+    width: 100%;
+    padding: 2%;
+}
+
+.icon {
+    width: 25%;
+    border: 2px #dbdbdb solid
+}
+
+.WorkImg {
+    width: 50%;
+    border: 2px #dbdbdb solid
+}
+
+section {
+    margin: 5%;
+}
+
+.space-10 {
+    margin-left: 10px;
+}

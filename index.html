@@ -6,42 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="water.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Zyunia's Profile</title>
 </head>
 <header>
     <h1>Zyunia's Profile</h1>
     <nav>
-        <a href="a">
-            <h2 style="display:inline;">プロフィール</h2>
+        <a href="#Profile">
+            <h2 style="display:inline;" class="nav_">プロフィール</h2>
         </a>
-        <a href="a">
-            <h2 style="display:inline;">ワーク</h2>
+        <a href="#Work">
+            <h2 style="display:inline;" class="nav_">ワーク</h2>
         </a>
-        <a href="a">
-            <h2 style="display:inline;">スキル</h2>
-        </a>
-        <a href="a">
-            <h2 style="display:inline;">ヒストリー</h2>
+        <a href="#Skill">
+            <h2 style="display:inline;" class="nav_">スキル</h2>
         </a>
     </nav>
 </header>
 
 <body>
-    <main>
-        <article>
+    <main class="mainbox">
+        <article id="Profile">
             <h1>プロフィール</h1>
             <hr>
-            <p>うんちまん</p>
+            <section>
+                <img class="icon" src="img/icon.jpg"><br>
+                <h2 style="display:inline;">金子 大夢</h2>
+                <p style="display:inline;" class="space-10">(Kaneko Daimu)</p>
+                <p>2003年静岡県生まれ。N高等学校を卒業後、2022年現在金沢工業大学在学中。<br>
+                    <br>極度の社会不適合者で、対面のアルバイトが出来ないので株式会社Killinzy(友達の会社)でなんでも屋をやっています。<br>
+                    <br>趣味はゲーム、企画、プログラミング、モデリング、イラスト、カラオケ、アニメ等…主にゲーム制作に関わること全般を趣味としてやっています。<br>
+                    <br>ゲームはLeague of Legendsをメインに、旬のゲームを浅く広くやっています。音楽やカラオケも好きで、最近はMOROHAをよく聴いています。
+                    <br>その影響で座右の銘を聞かれた時はずっと「枯れた技術の水平思考」と答えていたんですけど、最近はMOROHAのLyricの一節の「進行形以外信じない」と答えるようになりました。
+                    <br>
+                </p>
+            </section>
         </article>
-
-        <article>
+        <article id="Work">
             <h1>ワーク</h1>
             <hr>
-            <p>うんちまん</p>
-        </article>
-        <h1>aaa</h1>
-    </main>
+            <section>
+                <h2>実績・受賞歴</h2>
+                <h3>eSports</h3>
+                <p>
+                    第三回全国高校高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
+                    第三回全国高校高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
+                    第三回STAGE:0 オンライン高校ブロック League of Legends部門 優勝<br>
+                    第三回STAGE:0 League of Legends部門 決勝大会 優勝<br>
+                    第四回全国高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
+                    第四回全国高校eSports選手権 League of Legends部門 決勝大会 ベスト4
+                </p>
+                <h3>ゲーム開発</h3>
+                <p>Unityユースクリエイターカップ2021 出場</p>
+                <br>
+            </section>
+            <section>
+                <h2>メディア出演・取材</h2>
+                <h3>テレビ出演</h3>
+                <p>
+                    テレビ東京「高校生ぃぃeeeee!」(<a href="https://www.tv-tokyo.co.jp/stage0/">リンク</a>)<br>
+                    テレビ朝日「ReAL eSports」(<a
+                        href="https://www.tv-asahi.co.jp/real_esports_news/#/?category=sports">リンク</a>)<br>
+                </p>
+                <h3>新聞掲載</h3>
+                <p>
+                    毎日新聞(<a href="https://mainichi.jp/">リンク</a>)<br>
+                    <a href="https://mainichi.jp/ajhs-esports/2020">第三回全国高校eSports選手権</a><br>
+                    <a href="https://mainichi.jp/ajhs-esports/">第四回全国高校eSports選手権</a><br>
+                </p>
+                <h3>ネットメディア</h3>
+                <P>
+                    GAME Watch(<a href="https://game.watch.impress.co.jp/">リンク</a>)<br>
+                    ゲーマーゲーマー(<a href="https://gamer2.jp/">リンク</a>)
+                </P>
+            </section>
+            <section>
+                <h2>ゲーム</h2>
+                <p>個人・又は主体となって開発したゲーム</p>
+                <h3>FishFsih</h3>
+                <img class="WorkImg" src="img/fishfish.jpg">
+                <p>暗い水中で魚が天敵を避けながら仲間を探すゲーム。<br>初めてUnityを使用して作ったゲームで、<br> 1週間ゲームジャムお題「さがす」の投稿作品。</p>
+                <div
+                    onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+                    <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
+                </div>
+                <div id="open" style="display:none;clear:both;">
+                    <p><u>制作期間:</u><br>2019/10/16 ～
+                        2019/10/20<br><u>制作規模：</u><br>個人(サウンドだけ友人に頼みました)<br><u>制作環境:</u><br>Unity,Piskel</p>
 
+                </div>
+                <h3>Yo28RPG</h3>
+                <img class="WorkImg" src="img/yo28.png">
+                <p>MinecraftでMMORPGが遊べるゲームサーバー。<br>同時接続ユーザー数50人超え。<br>Javaでゲームシステムプラグインを作成</p>
+                <div
+                    onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
+                    <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
+                </div>
+                <div id="open2" style="display:none;clear:both;">
+                    <p><u>制作期間:</u><br>2019/3 ～
+                        2019/9<br><u>制作規模：</u><br>Yo28RPG開発チーム(メイン2人,補佐13人)<br><u>担当:</u><br>プロデューサー,<br>ディレクター<br>プランナー<br>アートディレクター<br>
+                        <u>制作環境：</u><br>MinecraftJE,Spigot<br>
+                </div>
+                <h3>タイトル未定</h3>
+                <img class="WorkImg" src="img/karigame.jpg">
+                <p>男子高校生とチャイナ少女が宇宙人と戦うアクションゲーム。<br>Unityでのゲーム制作に慣れる為に制作中</p>
+                <div
+                    onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
+                    <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
+                </div>
+                <div id="open3" style="display:none;clear:both;">
+                    <p><u>制作期間:</u><br>2022/1 ～
+                        <br><u>制作規模：</u><br>個人<br><u>担当:</u><br>アニメーション・音楽以外の全てを担当<br>
+                        <u>制作環境：</u><br>Unity,Blender,CLIP STUDIO PAINT等<br>
+                </div>
+            </section>
+
+        </article>
+        <article id="Skill">
+            <h1>スキル</h1>
+            <hr>
+            <section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <small>&copy; copyright 2022 kanekodaimu</small>
+    </footer>
 </body>
 
 </html>
