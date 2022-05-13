@@ -1395,6 +1395,19 @@ body>footer {
 
 /*追加*/
 
+.gallery {
+    display: flex;
+}
+
+.galleryImg {
+    border: 2px #dbdbdb solid;
+    margin: 2%;
+}
+
+img {
+    vertical-align: bottom;
+}
+
 .nav_ {
     position: relative;
     padding-left: 25px;
@@ -1438,4 +1451,33 @@ section {
 
 .space-10 {
     margin-left: 10px;
+}
+
+.progress {
+    width: 90%;
+    border-radius: 25px;
+    background: #eee;
+    height: 40px;
+    margin: 15px;
+}
+
+.html,
+.css,
+.jquery,
+.php {
+    width: 0;
+    border-radius: 25px;
+    background: green;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
