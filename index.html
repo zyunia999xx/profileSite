@@ -134,7 +134,7 @@
                 <h2>2DCG・3DCG</h2>
                 <p>準備中</p>
             </section>
-            
+
 
         </article>
         <article id="Skill">
@@ -272,6 +272,37 @@
         lightGallery(document.getElementById('lightgallery'), {
             download: false,
         });
+    </script>
+
+    <script>
+        var skillMsg = document.getElementById('text-msg');
+
+        function brMsg(msg) {
+            var isBr = msg.includes();
+
+            if (msg) {
+
+            }
+        }
+    </script>
+
+    <script>
+        //要素がはみ出るなら事前に改行
+        function hasLineBreak(textNode) {
+            let range = new Range()
+            range.selectNode(textNode)
+            return range.getClientRects().length > 1
+        }
+
+        document.querySelectorAll(".Skill").forEach(el => {
+            let ret = hasLineBreak(el.firstChild)
+            console.log(ret, el.firstChild.textContent)
+            if(ret){
+                console.log(el.firstChild)
+                var newBr = document.createElement('br');
+                el.before(newBr);
+            }
+        })
     </script>
 </body>
 
