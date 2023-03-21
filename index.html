@@ -19,14 +19,14 @@
 <header>
     <h1>Zyunia's Profile</h1>
     <nav>
-        <a href="#Profile">
-            <h2 style="display:inline;" class="nav_">プロフィール</h2>
-        </a>
         <a href="#Work">
             <h2 style="display:inline;" class="nav_">ワーク</h2>
         </a>
         <a href="#Skill">
             <h2 style="display:inline;" class="nav_">スキル</h2>
+        </a>
+        <a href="#Profile">
+            <h2 style="display:inline;" class="nav_">プロフィール</h2>
         </a>
         <a href="#Contact">
             <h2 style="display:inline;" class="nav_">コンタクト</h2>
@@ -36,25 +36,132 @@
 
 <body>
     <main class="mainbox">
+        <article id="Work">
+            <h1>作品紹介</h1>
+            <hr>
+
+            </section>
+            <section class="game">
+                <dev>
+                    <h2>ゲーム</h2>
+                    <p>個人製作・または開発に携わったゲーム</p>
+                </dev>
+                <div>
+                    <a href="https://unityroom.com/games/fishfish">
+                        <h3>FishFsih</h3>
+                        <img class="WorkImg" src="img/fishfish.jpg">
+                    </a>
+                    <p>暗い水中で魚が天敵を避けながら仲間を探すゲーム。<br>初めてUnityを使用して作ったゲームで、<br> 1週間ゲームジャムお題「さがす」の投稿作品。</p>
+
+                    <div
+                        onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+                        <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
+                    </div>
+                    <div id="open" style="display:none;clear:both;">
+                        <p><u>制作期間:</u><br>2019/10/16 ～
+                            2019/10/20<br><u>制作規模：</u><br>個人(サウンドだけ友人に頼みました)<br><u>制作環境:</u><br>Unity,Piskel</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://minecraft.jp/servers/5d3cfeaba9b0bd26d000834d">
+                        <h3>Yo28RPG</h3>
+                        <img class="WorkImg" src="img/yo28.png">
+                    </a>
+                    <p>MinecraftでMMORPGが遊べるゲームサーバー。<br>同時接続ユーザー数50人超え。<br>Javaでゲームシステムプラグインを作成</p>
+                    <div
+                        onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
+                        <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
+                    </div>
+                    <div id="open2" style="display:none;clear:both;">
+                        <p><u>制作期間:</u><br>2019/3 ～
+                            2019/9<br><u>制作規模：</u><br>Yo28RPG開発チーム(メイン2人,補佐13人)<br><u>担当:</u><br>プロデューサー,<br>ディレクター<br>プランナー<br>アートディレクター<br>
+                            <u>制作環境：</u><br>MinecraftJE,Spigot<br>
+                    </div>
+                </div>
+                <div>
+                    <h3>タイトル未定</h3>
+                    <img class="WorkImg" src="img/karigame.jpg">
+                    <p>男子高校生とチャイナ少女が宇宙人と戦うアクションゲーム。<br>Unityでのゲーム制作に慣れる為に制作中</p>
+                    <div
+                        onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
+                        <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
+                    </div>
+                    <div id="open3" style="display:none;clear:both;">
+                        <p><u>制作期間:</u><br>2022/1 ～
+                            <br><u>制作規模：</u><br>個人<br><u>担当:</u><br>アニメーション・音楽以外の全てを担当<br>
+                            <u>制作環境：</u><br>Unity,Blender,CLIP STUDIO PAINT等<br>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <h2>2DCG・3DCG</h2>
+                <p>準備中</p>
+            </section>
+
+
+
+        </article>
+        <br>
+        <article id="Skill">
+            <h1>スキル</h1>
+            <hr>
+            <section>
+                <h2>所持スキル</h2>
+                <span class="Skill">Unityゲーム制作</span>
+                <span class="Skill">3Dモデル制作</span>
+                <span class="Skill">歌ってみた制作</span>
+                <span class="Skill">Webサイト制作</span>
+                <span class="Skill">ゲームコーチング</span>
+            </section>
+            <section>
+                <h2>実装/デザインツール</h2>
+                <div class="SkillBar" data-width="40%">
+                    <div class="unity" data-name="Unity"></div>
+                </div>
+                <div class="SkillBar" data-width="40%">
+                    <div class="blender" data-name="Blender"></div>
+                </div>
+                <div class="SkillBar" data-width="80%">
+                    <div class="csp" data-name="CLIP STUDIO PAINT"></div>
+                </div>
+                <section>
+                    <p>Unityはゲームの実装に、Blenderは3Dモデル制作に、CSPは2Dデザイン制作に使用しています。</p>
+                </section>
+            </section>
+            <section>
+                <h2>開発言語</h2>
+                <div class="SkillBar" data-width="40%">
+                    <div class="cs" data-name="Unity C#"></div>
+                </div>
+                <div class="SkillBar" data-width="25%">
+                    <div class="html" data-name="HTML"></div>
+                </div>
+                <div class="SkillBar" data-width="25%">
+                    <div class="css" data-name="CSS"></div>
+                </div>
+                <div class="SkillBar" data-width="20%">
+                    <div class="js" data-name="JS"></div>
+                </div>
+                <section>
+                    <p>Web系はこのサイトが作れる程度、UnityC#は専門学生レベルくらいだと思います。</p>
+                </section>
+            </section>
+        </article>
+        <br>
         <article id="Profile">
             <h1>プロフィール</h1>
             <hr>
             <section>
                 <img class="icon" src="img/icon.jpg"><br>
-                <h2 style="display:inline;">金子 大夢</h2>
+                <h2 style="display:inline;">じゅにあ</h2>
                 <p style="display:inline;" class="space-10">(Kaneko Daimu)</p>
-                <p>2003年静岡県生まれ。N高等学校を卒業後、2022年現在金沢工業大学在学中。<br>
-                    <br>極度の社会不適合者で、対面のアルバイトが出来ないので株式会社Killinzy(友達の会社)でなんでも屋をやっています。<br>
-                    <br>趣味はゲーム、企画、プログラミング、モデリング、イラスト、カラオケ、アニメ等…主にゲーム制作に関わること全般を趣味としてやっています。<br>
-                    <br>ゲームはLeague of Legendsをメインに、旬のゲームを浅く広くやっています。音楽やカラオケも好きで、最近はMOROHAをよく聴いています。
-                    <br>その影響で座右の銘を聞かれた時はずっと「枯れた技術の水平思考」と答えていたんですけど、最近はMOROHAのLyricの一節「進行形以外信じない」と答えるようになりました。
+                <p>2003年生まれ。静岡県出身。N高等学校を卒業後、2022年現在金沢工業大学在学中。<br>
+                    <br>主にゲーム開発、高校eスポーツ指導の分野で活動しています。<br>
                     <br>
                 </p>
             </section>
-        </article>
-        <article id="Work">
-            <h1>ワーク</h1>
-            <hr>
+
             <section>
                 <h2>実績・受賞歴</h2>
                 <h3>eSports</h3>
@@ -62,9 +169,11 @@
                     第三回全国高校高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
                     第三回全国高校高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
                     第三回STAGE:0 オンライン高校ブロック League of Legends部門 優勝<br>
+                    第三回STAGE:0 League of Legends部門 オンライン高校ブロック 優勝<br>
                     第三回STAGE:0 League of Legends部門 決勝大会 優勝<br>
                     第四回全国高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
-                    第四回全国高校eSports選手権 League of Legends部門 決勝大会 ベスト4
+                    第四回全国高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
+                    飛龍高校eSports部コーチ就任
                 </p>
                 <h3>ゲーム開発</h3>
                 <p>Unityユースクリエイターカップ2021 出場</p>
@@ -90,153 +199,8 @@
                     ゲーマーゲーマー(<a href="https://gamer2.jp/">リンク</a>)
                 </P>
             </section>
-            <section>
-                <h2>ゲーム</h2>
-                <p>個人・又は主体となって開発したゲーム</p>
-                <h3>FishFsih</h3>
-                <img class="WorkImg" src="img/fishfish.jpg">
-                <p>暗い水中で魚が天敵を避けながら仲間を探すゲーム。<br>初めてUnityを使用して作ったゲームで、<br> 1週間ゲームジャムお題「さがす」の投稿作品。</p>
-                <div
-                    onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
-                    <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
-                </div>
-                <div id="open" style="display:none;clear:both;">
-                    <p><u>制作期間:</u><br>2019/10/16 ～
-                        2019/10/20<br><u>制作規模：</u><br>個人(サウンドだけ友人に頼みました)<br><u>制作環境:</u><br>Unity,Piskel</p>
-
-                </div>
-                <h3>Yo28RPG</h3>
-                <img class="WorkImg" src="img/yo28.png">
-                <p>MinecraftでMMORPGが遊べるゲームサーバー。<br>同時接続ユーザー数50人超え。<br>Javaでゲームシステムプラグインを作成</p>
-                <div
-                    onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
-                    <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
-                </div>
-                <div id="open2" style="display:none;clear:both;">
-                    <p><u>制作期間:</u><br>2019/3 ～
-                        2019/9<br><u>制作規模：</u><br>Yo28RPG開発チーム(メイン2人,補佐13人)<br><u>担当:</u><br>プロデューサー,<br>ディレクター<br>プランナー<br>アートディレクター<br>
-                        <u>制作環境：</u><br>MinecraftJE,Spigot<br>
-                </div>
-                <h3>タイトル未定</h3>
-                <img class="WorkImg" src="img/karigame.jpg">
-                <p>男子高校生とチャイナ少女が宇宙人と戦うアクションゲーム。<br>Unityでのゲーム制作に慣れる為に制作中</p>
-                <div
-                    onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
-                    <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
-                </div>
-                <div id="open3" style="display:none;clear:both;">
-                    <p><u>制作期間:</u><br>2022/1 ～
-                        <br><u>制作規模：</u><br>個人<br><u>担当:</u><br>アニメーション・音楽以外の全てを担当<br>
-                        <u>制作環境：</u><br>Unity,Blender,CLIP STUDIO PAINT等<br>
-                </div>
-            </section>
-            <section>
-                <h2>2DCG・3DCG</h2>
-                <p>準備中</p>
-            </section>
-
-
         </article>
-        <article id="Skill">
-            <h1>スキル</h1>
-            <hr>
-            <section>
-                <h2>所持スキル</h2>
-                <span class="Skill">Unityゲーム制作</span>
-                <span class="Skill">3Dモデル制作</span>
-                <span class="Skill">歌ってみた制作</span>
-                <span class="Skill">Webサイト制作</span>
-                <span class="Skill">イラスト制作</span>
-            </section>
-            <section>
-                <h2>開発ツール</h2>
-                <div class="SkillBar" data-width="40%">
-                    <div class="unity" data-name="Unity"></div>
-                </div>
-                <section>
-                    <p>2D/3Dゲームの実装が出来ます。VRには非対応。</p>
-                </section>
-            </section>
-            <section>
-                <h2>モデリングツール</h2>
-                <div class="SkillBar" data-width="40%">
-                    <div class="blender" data-name="Blender"></div>
-                </div>
-                <section>
-                    <p>ローポリのモデリング,Unity向けヒューマノイドのリグセットアップが出来ます。スカルプトは非対応。有機物を作るのは苦手です。</p>
-                </section>
-
-            </section>
-            <section>
-                <h2>デザインツール</h2>
-                <div class="SkillBar" data-width="80%">
-                    <div class="csp" data-name="CLIP STUDIO PAINT PRO"></div>
-                </div>
-                <section>
-                    <p>メインのデザインツールです。ほとんどの機能を使いこなせます。</p>
-                </section>
-                <div class="SkillBar" data-width="30%">
-                    <div class="ps" data-name="Photoshop"></div>
-                </div>
-                <section>
-                    <p>クリスタだと出来ない画像加工に使ってます。</p>
-                </section>
-                <div class="SkillBar" data-width="30%">
-                    <div class="csp" data-name="Substance Painter"></div>
-                </div>
-                <section>
-                    <p>モデルのマテリアル作成に使用しています。</p>
-                </section>
-
-
-            </section>
-
-            <section>
-                <h2>言語</h2>
-                <div class="SkillBar" data-width="20%">
-                    <div class="cs" data-name="C#"></div>
-                </div>
-                <section>
-                    <p>Unity開発で使用していますが、言語自体は入門書終わらせたくらいの知識量です。</p>
-                </section>
-                <div class="SkillBar" data-width="25%">
-                    <div class="html" data-name="HTML"></div>
-                </div>
-                <section>
-                    <p>基本的なタグの使い方は理解しています。</p>
-                </section>
-                <div class="SkillBar" data-width="25%">
-                    <div class="css" data-name="CSS"></div>
-                </div>
-                <section>
-                    <p>基本的なデザインは実装出来ます。</p>
-                </section>
-                <div class="SkillBar" data-width="10%">
-                    <div class="js" data-name="JS"></div>
-                </div>
-                <section>
-                    <p>なんとなく書けますが、ちゃんとした知識はゼロです。</p>
-                </section>
-
-            </section>
-
-            <section>
-                <h2>ミキシング</h2>
-                <div class="SkillBar" data-width="80%">
-                    <div class="cubase" data-name="Vocal"></div>
-                </div>
-                <section>
-                    <p>Cubaseを使用したハイクオリティなボーカルミックスが出来ます。クリアで迫力のあるミックスが得意です。</p>
-                </section>
-                <div class="SkillBar" data-width="80%">
-                    <div class="cubase" data-name="Mastering"></div>
-                </div>
-                <section>
-                    <p>Cubaseを使用したハイクオリティなマスタリングが出来ます。</p>
-                </section>
-            </section>
-        </article>
-
+        <br>
         <article id="Contact">
             <h1>コンタクト</h1>
             <hr>
@@ -247,7 +211,7 @@
         </article>
     </main>
     <footer>
-        <small>&copy; copyright 2022 kanekodaimu</small>
+        <small>&copy; copyright 2023 kanekodaimu</small>
     </footer>
 
     <script>
@@ -297,12 +261,20 @@
         document.querySelectorAll(".Skill").forEach(el => {
             let ret = hasLineBreak(el.firstChild)
             console.log(ret, el.firstChild.textContent)
-            if(ret){
+            if (ret) {
                 console.log(el.firstChild)
                 var newBr = document.createElement('br');
                 el.before(newBr);
             }
         })
+
+        $(function () {
+            $('.Toggle').click(function () {
+                $(this).toggleClass('active');
+                $('.menu').toggleClass('open');
+            });
+        });
+
     </script>
 </body>
 
