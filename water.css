@@ -729,7 +729,6 @@ input[type='range'],
 select,
 button,
 textarea {
-    -webkit-appearance: none;
 }
 
 textarea {
@@ -1123,10 +1122,6 @@ a {
         color: #41adff;
         color: var(--links);
     }
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 code {
@@ -1706,8 +1701,10 @@ img {
 
 .nav_ {
     position: relative;
-    padding-left: 25px;
-    padding-right: 15px;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* テキストを中央に配置 */
+    line-height: 40px;
 
 }
 
@@ -1719,9 +1716,8 @@ img {
     top: 10px;
     width: 3px;
     height: 20px;
-    background-color: #22aa5b;
+    background-color: #526878;
 }
-
 
 
 main {

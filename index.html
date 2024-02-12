@@ -8,147 +8,65 @@
     <link rel="stylesheet" href="water.css">
     <link type="text/css" rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/src/css/lightgallery.css" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 
+    <title>ZYUNIA ROOM</title>
+    <style>
+        /* bodyのBackground */
+        body {
+            background-color: #15162B;
+        }
 
-    <title>Zyunia's Profile</title>
+        /* hrの色 */
+        hr {
+            border: 1px solid #2F3042;
+        }
+
+        /* a要素をホバーしたとき、なめらかにテキストを大きくする */
+        a:hover {
+            transition: all 0.3s;
+            font-size: 1.2em;
+        }
+
+        a {
+            transition: all 0.3s;
+        }
+
+
+
+        @font-face {
+            font-family: "PixelMplus12-Regular";
+            src: url(PixelMplus12-Regular.ttf);
+        }
+
+        /* サイト全体のフォント指定 */
+        body {
+            font-family: "PixelMplus12-Regular"
+        }
+    </style>
 </head>
-<header>
-    <h1>Zyunia's Profile</h1>
-    <nav>
-        <a href="#Work">
-            <h2 style="display:inline;" class="nav_">ワーク</h2>
-        </a>
-        <a href="#Skill">
-            <h2 style="display:inline;" class="nav_">スキル</h2>
-        </a>
-        <a href="#Profile">
-            <h2 style="display:inline;" class="nav_">プロフィール</h2>
-        </a>
-        <a href="#Contact">
-            <h2 style="display:inline;" class="nav_">コンタクト</h2>
-        </a>
-    </nav>
-</header>
 
 <body>
+    <header>
+        <h1>ZYUNIA ROOM</h1>
+        <nav>
+            <a href="#Profile">
+                <h2 style="display:inline;" class="nav_">プロフィール</h2>
+            </a>
+            <a href="#Work">
+                <h2 style="display:inline;" class="nav_">作品</h2>
+            </a>
+            <a href="#Contact">
+                <h2 style="display:inline;" class="nav_">コンタクト</h2>
+            </a>
+        </nav>
+    </header>
+
     <main class="mainbox">
-        <article id="Work">
-            <h1>作品紹介</h1>
-            <hr>
-
-            </section>
-            <section class="game">
-                <dev>
-                    <h2>ゲーム</h2>
-                    <p>個人製作・または開発に携わったゲーム</p>
-                </dev>
-                <div>
-                    <a href="https://unityroom.com/games/fishfish">
-                        <h3>FishFsih</h3>
-                        <img class="WorkImg" src="img/fishfish.jpg">
-                    </a>
-                    <p>暗い水中で魚が天敵を避けながら仲間を探すゲーム。<br>初めてUnityを使用して作ったゲームで、<br> 1週間ゲームジャムお題「さがす」の投稿作品。</p>
-
-                    <div
-                        onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
-                        <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
-                    </div>
-                    <div id="open" style="display:none;clear:both;">
-                        <p><u>制作期間:</u><br>2019/10/16 ～
-                            2019/10/20<br><u>制作規模：</u><br>個人(サウンドだけ友人に頼みました)<br><u>制作環境:</u><br>Unity,Piskel</p>
-                    </div>
-                </div>
-                <div>
-                    <a href="https://minecraft.jp/servers/5d3cfeaba9b0bd26d000834d">
-                        <h3>Yo28RPG</h3>
-                        <img class="WorkImg" src="img/yo28.png">
-                    </a>
-                    <p>MinecraftでMMORPGが遊べるゲームサーバー。<br>同時接続ユーザー数50人超え。<br>Javaでゲームシステムプラグインを作成</p>
-                    <div
-                        onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
-                        <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
-                    </div>
-                    <div id="open2" style="display:none;clear:both;">
-                        <p><u>制作期間:</u><br>2019/3 ～
-                            2019/9<br><u>制作規模：</u><br>Yo28RPG開発チーム(メイン2人,補佐13人)<br><u>担当:</u><br>プロデューサー,<br>ディレクター<br>プランナー<br>アートディレクター<br>
-                            <u>制作環境：</u><br>MinecraftJE,Spigot<br>
-                    </div>
-                </div>
-                <div>
-                    <h3>タイトル未定</h3>
-                    <img class="WorkImg" src="img/karigame.jpg">
-                    <p>男子高校生とチャイナ少女が宇宙人と戦うアクションゲーム。<br>Unityでのゲーム制作に慣れる為に制作中</p>
-                    <div
-                        onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
-                        <a style="cursor:pointer;">▼ 詳細(クリックで表示)</a>
-                    </div>
-                    <div id="open3" style="display:none;clear:both;">
-                        <p><u>制作期間:</u><br>2022/1 ～
-                            <br><u>制作規模：</u><br>個人<br><u>担当:</u><br>アニメーション・音楽以外の全てを担当<br>
-                            <u>制作環境：</u><br>Unity,Blender,CLIP STUDIO PAINT等<br>
-                    </div>
-                </div>
-
-            </section>
-            <section>
-                <h2>2DCG・3DCG</h2>
-                <p>準備中</p>
-            </section>
-
-
-
-        </article>
-        <br>
-        <article id="Skill">
-            <h1>スキル</h1>
-            <hr>
-            <section>
-                <h2>所持スキル</h2>
-                <span class="Skill">Unityゲーム制作</span>
-                <span class="Skill">3Dモデル制作</span>
-                <span class="Skill">歌ってみた制作</span>
-                <span class="Skill">Webサイト制作</span>
-                <span class="Skill">ゲームコーチング</span>
-            </section>
-            <section>
-                <h2>実装/デザインツール</h2>
-                <div class="SkillBar" data-width="40%">
-                    <div class="unity" data-name="Unity"></div>
-                </div>
-                <div class="SkillBar" data-width="40%">
-                    <div class="blender" data-name="Blender"></div>
-                </div>
-                <div class="SkillBar" data-width="80%">
-                    <div class="csp" data-name="CLIP STUDIO PAINT"></div>
-                </div>
-                <section>
-                    <p>Unityはゲームの実装に、Blenderは3Dモデル制作に、CSPは2Dデザイン制作に使用しています。</p>
-                </section>
-            </section>
-            <section>
-                <h2>開発言語</h2>
-                <div class="SkillBar" data-width="40%">
-                    <div class="cs" data-name="Unity C#"></div>
-                </div>
-                <div class="SkillBar" data-width="25%">
-                    <div class="html" data-name="HTML"></div>
-                </div>
-                <div class="SkillBar" data-width="25%">
-                    <div class="css" data-name="CSS"></div>
-                </div>
-                <div class="SkillBar" data-width="20%">
-                    <div class="js" data-name="JS"></div>
-                </div>
-                <section>
-                    <p>Web系はこのサイトが作れる程度、UnityC#は専門学生レベルくらいだと思います。</p>
-                </section>
-            </section>
-        </article>
-        <br>
+        <!-- プロフィールセクション -->
         <article id="Profile">
             <h1>プロフィール</h1>
             <hr>
@@ -156,125 +74,127 @@
                 <img class="icon" src="img/icon.jpg"><br>
                 <h2 style="display:inline;">じゅにあ</h2>
                 <p style="display:inline;" class="space-10">(Kaneko Daimu)</p>
-                <p>2003年生まれ。静岡県出身。N高等学校を卒業後、2022年現在金沢工業大学在学中。<br>
-                    <br>主にゲーム開発、高校eスポーツ指導の分野で活動しています。<br>
-                    <br>
-                </p>
+                <p>2003年生まれ。静岡県出身。N高等学校を卒業後、2023年現在金沢工業大学在学中。<br>主にゲーム開発、高校eスポーツ指導の分野で活動しています。</p>
             </section>
-
             <section>
+                <br>
                 <h2>実績・受賞歴</h2>
                 <h3>eSports</h3>
                 <p>
-                    第三回全国高校高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
-                    第三回全国高校高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
-                    第三回STAGE:0 オンライン高校ブロック League of Legends部門 優勝<br>
-                    第三回STAGE:0 League of Legends部門 オンライン高校ブロック 優勝<br>
-                    第三回STAGE:0 League of Legends部門 決勝大会 優勝<br>
-                    第四回全国高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
-                    第四回全国高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
-                    飛龍高校eSports部コーチ就任
+                <h4>2020<br></h4>
+                第三回全国高校高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
+                第三回全国高校高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
+                <h4>2021<br></h4>
+                第三回STAGE:0 オンライン高校ブロック League of Legends部門 優勝<br>
+                第三回STAGE:0 League of Legends部門 オンライン高校ブロック 優勝<br>
+                第三回STAGE:0 League of Legends部門 決勝大会 優勝<br>
+                第四回全国高校eSports選手権 League of Legends部門 Gブロック 優勝<br>
+                第四回全国高校eSports選手権 League of Legends部門 決勝大会 ベスト4<br>
+                <h4>2023<br></h4>
+                飛龍高校eSports部コーチ就任
                 </p>
+                <br>
                 <h3>ゲーム開発</h3>
+                <h4>2020<br></h4>
+                <p>Yo28ProjectからYo28RPG βリリース</p>
+                <p>FishFish リリース</p>
+                <h4>2021<br></h4>
                 <p>Unityユースクリエイターカップ2021 出場</p>
+                <h4>2023<br></h4>
+                <p>AtelierYo28からSmashHockey リリース</p>
                 <br>
             </section>
+            <!-- メディア出演・取材 -->
             <section>
                 <h2>メディア出演・取材</h2>
-                <h3>テレビ出演</h3>
                 <p>
                     テレビ東京「高校生ぃぃeeeee!」(<a href="https://www.tv-tokyo.co.jp/stage0/">リンク</a>)<br>
                     テレビ朝日「ReAL eSports」(<a
                         href="https://www.tv-asahi.co.jp/real_esports_news/#/?category=sports">リンク</a>)<br>
-                </p>
-                <h3>新聞掲載</h3>
-                <p>
+                    <br>
                     毎日新聞(<a href="https://mainichi.jp/">リンク</a>)<br>
                     <a href="https://mainichi.jp/ajhs-esports/2020">第三回全国高校eSports選手権</a><br>
                     <a href="https://mainichi.jp/ajhs-esports/">第四回全国高校eSports選手権</a><br>
-                </p>
-                <h3>ネットメディア</h3>
-                <P>
+                    <br>
                     GAME Watch(<a href="https://game.watch.impress.co.jp/">リンク</a>)<br>
                     ゲーマーゲーマー(<a href="https://gamer2.jp/">リンク</a>)
                 </P>
             </section>
         </article>
-        <br>
-        <article id="Contact">
-            <h1>コンタクト</h1>
+        <article id="Work">
+            <h1>作品</h1>
             <hr>
-            <section>
-                <p>ご連絡があれば<br>Mail (jr428428☆gmail.com ☆→@)<br>Twitter (@zyunizyunia)<br>どちらかまでお願いします。</p>
+
+            <!-- ゲームセクション -->
+            <section class="game">
+                <!-- FishFsih -->
+                <div>
+                    <a href="https://unityroom.com/games/fishfish">
+                        <h3>FishFsih</h3>
+                        <img class="WorkImg" src="img/fishfish.jpg">
+                    </a>
+                    <p>暗い水中で魚が天敵を避けながら仲間を探すゲーム。<br>初めてUnityを使用して作ったゲームで、<br> 1週間ゲームジャムお題「さがす」の投稿作品。</p>
+                    <div onclick="toggleDetails('open')"><a>▼ 詳細(クリックで表示)</a></div>
+                    <div id="open" style="display:none;clear:both;">
+                        <p><u>制作期間:</u><br>2019/10/16 ～
+                            2019/10/20<br><u>制作：</u><br>個人(サウンドだけ友人に頼みました)<br><u>使用ツール:</u><br>Unity,Piskel</p>
+                    </div>
+                </div>
+                <!-- Yo28RPG -->
+                <div>
+                    <a href="https://minecraft.jp/servers/5d3cfeaba9b0bd26d000834d">
+                        <h3>Yo28RPG</h3>
+                        <img class="WorkImg" src="img/yo28.png">
+                    </a>
+                    <p>MinecraftでMMORPGが遊べるゲームサーバー。<br>同時接続ユーザー数50人超え。<br>Javaでゲームシステムプラグインを作成</p>
+                    <div onclick="toggleDetails('open2')"><a>▼ 詳細(クリックで表示)</a></div>
+                    <div id="open2" style="display:none;clear:both;">
+                        <p><u>制作期間:</u><br>2019/3 ～
+                            2019/9<br><u>制作：</u><br>Yo28Project(10-15人)<br><u>担当:</u><br>全体統括<br><u>使用ツール：</u><br>MinecraftJE,Spigot
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://unityroom.com/games/smash_hockey">
+                        <h3>SmashHockey</h3>
+                        <img class="WorkImg" src="img/SmashHockey.png">
+                    </a>
+                    <p>タイミングよくスマッシュを決めろ！新感覚ホッケー！</p>
+                    <div onclick="toggleDetails('open3')"><a>▼ 詳細(クリックで表示)</a></div>
+                    <div id="open3" style="display:none;clear:both;">
+                        <p><u>制作期間:</u><br>2023/11 ～
+                            2023/12<br><u>制作：</u><br>AtelierYo28(3人)<br><u>担当:</u><br>グラフィック全体・ゲームメカニクス提案<br><u>制作環境：</u><br>Unity,Blender,Aseprite
+                        </p>
+                    </div>
+                </div>
             </section>
 
-        </article>
+            <!-- コンタクトセクション -->
+            <article id="Contact">
+                <h1>コンタクト</h1>
+                <hr>
+                <section>
+                    <p>ご連絡があれば<br>Mail (zyuniagamedev@gmail.com)<br>X・Twitterのダイレクトメッセージ (@zyunizyunia)<br>どちらかまでお願いします。
+                    </p>
+                </section>
+            </article>
     </main>
+
     <footer>
         <small>&copy; copyright 2023 kanekodaimu</small>
     </footer>
 
+    <!-- JavaScriptスクリプト -->
     <script>
-        function SkillBar(el, width) {
-            el.animate(
-                { width: width },
-                {
-                    duration: 2000,
-                    step: function (now, fx) {
-                        if (fx.prop == 'width') {
-                            el.html(el.data("name"));
-                        }
-                    }
-                }
-            );
-        }
-        $('.SkillBar').each(function () {
-            SkillBar($(this).find("div"), $(this).data("width"))
-        });
-    </script>
-    <script>
-        lightGallery(document.getElementById('lightgallery'), {
-            download: false,
-        });
-    </script>
-
-    <script>
-        var skillMsg = document.getElementById('text-msg');
-
-        function brMsg(msg) {
-            var isBr = msg.includes();
-
-            if (msg) {
-
+        // セクションの詳細を切り替える
+        function toggleDetails(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
             }
         }
-    </script>
-
-    <script>
-        //要素がはみ出るなら事前に改行
-        function hasLineBreak(textNode) {
-            let range = new Range()
-            range.selectNode(textNode)
-            return range.getClientRects().length > 1
-        }
-
-        document.querySelectorAll(".Skill").forEach(el => {
-            let ret = hasLineBreak(el.firstChild)
-            console.log(ret, el.firstChild.textContent)
-            if (ret) {
-                console.log(el.firstChild)
-                var newBr = document.createElement('br');
-                el.before(newBr);
-            }
-        })
-
-        $(function () {
-            $('.Toggle').click(function () {
-                $(this).toggleClass('active');
-                $('.menu').toggleClass('open');
-            });
-        });
-
     </script>
 </body>
 
