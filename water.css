@@ -1815,6 +1815,38 @@ section {
     margin-bottom: 20px;
 }
 
+/* bodyのBackground */
+body {
+    background-color: #15162B;
+}
+
+/* hrの色 */
+hr {
+    border: 1px solid #2F3042;
+}
+
+/* a要素をホバーしたとき、なめらかにテキストを大きくする */
+a:hover {
+    transition: all 0.3s;
+    font-size: 1.2em;
+}
+
+a {
+    transition: all 0.3s;
+}
+
+
+
+@font-face {
+    font-family: "PixelMplus12-Regular";
+    src: url(PixelMplus12-Regular.ttf);
+}
+
+/* サイト全体のフォント指定 */
+body {
+    font-family: "PixelMplus12-Regular"
+}
+
 
 @media screen and (max-width: 768px) {
     .game>div {
